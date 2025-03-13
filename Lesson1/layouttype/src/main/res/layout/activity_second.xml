@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
@@ -25,43 +24,43 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="New life for mirea activity"
+            android:text="New file for MIREA activity"
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ПЕРВАЯ КНОПКА" />
+            android:text="Button1" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/button16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ВТОРАЯ КНОПКА" />
+            android:text="Button2" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/button17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ТРЕТЬЯ КНОПКА" />
+            android:text="Button3" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/button18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ЧЕТВЕРТАЯ КНОПКА" />
+            android:text="Button4" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/button19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ПЯТАЯ КНОПКА" />
+            android:text="Button5" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/button20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ШЕСТАЯ КНОПКА" />
+            android:text="Button6" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
