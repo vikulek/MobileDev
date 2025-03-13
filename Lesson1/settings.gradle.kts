@@ -23,3 +23,4 @@ rootProject.name = "Lesson1"
 include(":app")
 include(":layouttype")
 include(":control_lessson1")
+include(":ButtonClicker")
