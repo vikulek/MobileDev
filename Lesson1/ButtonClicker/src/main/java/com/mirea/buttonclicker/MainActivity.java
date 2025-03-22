@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void OnMyButtonClick(View View)
-    {
+    {   tvOut.setText("Oiiiiii ya tyt");
         Toast.makeText(this, "Мой номер по списку № 17", Toast.LENGTH_SHORT).show();
     }
     public void OnMyButtonClick1(View View)
