@@ -1,63 +1,46 @@
 package com.mirea.turbinava.notificationapp;
 
+
 import static android.Manifest.permission.POST_NOTIFICATIONS;
 
+import android.Manifest;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
     private int PermissionCode = 200;
+    @RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
     private static final String CHANNEL_ID = "com.mirea.turbinava.notificationapp";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         if (ContextCompat.checkSelfPermission(this, POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
-            Log.d(NotificationApp.class.getSimpleName(), "Разрешения получены");
+            Log.d(MainActivity.class.getSimpleName().toString(), "Разрешения получены");
         } else {
-            Log.d(NotificationApp.class.getSimpleName(), "Нет разрешений!");
-            ActivityCompat.requestPermissions(this, new String[]{POST_NOTIFICATIONS}, PermissionCode);
-        }
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
-        createNotificationChannel();
-    }
-
-    private void createNotificationChannel() {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "TURBINA V.A. Notification", NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription("МИРЭА Канал");
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
-            if (notificationManager != null) {
-                notificationManager.createNotificationChannel(channel);
+            Log.d(MainActivity.class.getSimpleName().toString(), "Нет разрешений!");
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                ActivityCompat.requestPermissions(this, new String[]{POST_NOTIFICATIONS}, PermissionCode);
             }
         }
     }
 
     public void onClickSendNotification(View view) {
         if (ActivityCompat.checkSelfPermission(this, POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-            return; // Если разрешение не предоставлено, выход из метода
+            return;
         }
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
@@ -65,23 +48,17 @@ public class MainActivity extends AppCompatActivity {
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setStyle(new NotificationCompat.BigTextStyle()
-                        .bigText("Турбина В.А. БИСО-03-20"))
-                .setContentTitle("МИРЭА");
+                        .bigText("Much longer text that cannot fit one line..."))
+                .setContentTitle("Mirea");
+        int importance = NotificationManager.IMPORTANCE_DEFAULT;
+        NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "Турбина В.А. Notification", importance);
+        channel.setDescription("MIREA Channel");
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+        notificationManager.createNotificationChannel(channel);
         notificationManager.notify(1, builder.build());
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == PermissionCode) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Log.d(NotificationApp.class.getSimpleName(), "Разрешения получены");
-            } else {
-                Log.d(NotificationApp.class.getSimpleName(), "Разрешения отклонены!");
-            }
-        }
-    }
+
 
 
 
