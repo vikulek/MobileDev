@@ -6,38 +6,30 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.DialogFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.button_show_time_dialog).setOnClickListener(v -> {
+            MyTimeDialogFragment timeDialog = new MyTimeDialogFragment();
+            timeDialog.show(getSupportFragmentManager(), "timePicker");
+        });
+
+        findViewById(R.id.button_show_date_dialog).setOnClickListener(v -> {
+            MyDateDialogFragment dateDialog = new MyDateDialogFragment();
+            dateDialog.show(getSupportFragmentManager(), "datePicker");
+        });
+
+        findViewById(R.id.button_show_progress_dialog).setOnClickListener(v -> {
+            MyProgressDialogFragment progressDialog = new MyProgressDialogFragment();
+            progressDialog.show(getSupportFragmentManager(), "progress");
+        });
     }
 
-    public void onClickShowDialog(View view) {
-        AlertDialogFragment dialogFragment = new AlertDialogFragment();
-        dialogFragment.show(getSupportFragmentManager(), "mirea");
 
-    }
-
-    public void onOkClicked() {
-        Toast.makeText(getApplicationContext(), "Вы выбрали кнопку \"Иду дальше\"!",
-                Toast.LENGTH_LONG).show();
-    }
-
-    public void onCancelClicked() {
-        Toast.makeText(getApplicationContext(), "Вы выбрали кнопку \"Нет\"!",
-                Toast.LENGTH_LONG).show();
-    }
-
-    public void onNeutralClicked() {
-        Toast.makeText(getApplicationContext(), "Вы выбрали кнопку \"На паузе\"!",
-                Toast.LENGTH_LONG).show();
-
-    }
 }

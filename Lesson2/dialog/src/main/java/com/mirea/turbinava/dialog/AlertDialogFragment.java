@@ -18,25 +18,21 @@ public class AlertDialogFragment extends DialogFragment {
                 .setIcon(R.mipmap.ic_launcher_round)
                 .setPositiveButton("Иду дальше", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // Закрываем окно
-                        ((MainActivity)getActivity()).onOkClicked();
-                        dialog.cancel();
+
                     }
                 })
                 .setNeutralButton("На паузе",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,
                                                 int id) {
-                                ((MainActivity)getActivity()).onNeutralClicked();
-                                dialog.cancel();
+
                             }
                         })
                 .setNegativeButton("Нет",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,
                                                 int id) {
-                                ((MainActivity)getActivity()).onCancelClicked();
-                                dialog.cancel();
+
                             }
                         });
 
