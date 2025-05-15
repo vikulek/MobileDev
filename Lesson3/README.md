@@ -2,22 +2,21 @@
 
 ### 1.5
 
-![Image alt](https://github.com/vikulek/SAIZOND/blob/main/lab3/screens/elastic1.jpg)
-![](scr/151.jpg)
-![](scr/152.jpg)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/151.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/152.png)
 
 ### 1.6
 
-![](scr/161.jpg)
-![](scr/162.jpg)
-![](scr/163.jpg)
-![](scr/164.jpg)
-![](scr/165.jpg)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/161.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/162.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/163.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/164.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/165.png)
 
 ### 1.7
 
-![](scr/171.jpg)
-![](scr/172.jpg)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/171.jpg)
+![](scr/172.png)
 ![](scr/173.jpg)
 
 ### 1.8
