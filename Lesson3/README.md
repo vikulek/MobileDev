@@ -15,25 +15,25 @@
 
 ### 1.7
 
-![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/171.jpg)
-![](scr/172.png)
-![](scr/173.jpg)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/171.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/172.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/173.png)
 
 ### 1.8
 
-![](scr/181.jpg)
-![](scr/182.jpg)
-![](scr/183.jpg)
-![](scr/184.jpg)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/181.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/182.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/183.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/184.png)
 
 ### 2.1
 
-![](scr/211.jpg)
-![](scr/212.jpg)
-![](scr/213.jpg)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/211.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/212.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/213.png)
 
 ### Mirea
 
-![](scr/221.jpg)
-![](scr/222.jpg)
-![](scr/223.jpg)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/221.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/222.png)
+![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson3/screen/223.png)
