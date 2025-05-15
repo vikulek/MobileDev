@@ -2,6 +2,7 @@
 
 ### 1.5
 
+![Image alt](https://github.com/vikulek/SAIZOND/blob/main/lab3/screens/elastic1.jpg)
 ![](scr/151.jpg)
 ![](scr/152.jpg)
 
