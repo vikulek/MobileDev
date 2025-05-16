@@ -33,4 +33,9 @@
         android:name="com.mirea.turbinava.mireaproject.WebViewFragment"
         android:label="fragment_web_view"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/nav_worker"
+        android:name="com.mirea.turbinava.mireaproject.MyWorker"
+        android:label="Фоновая задача"
+        tools:layout="@layout/fragment_background" />
 </navigation>

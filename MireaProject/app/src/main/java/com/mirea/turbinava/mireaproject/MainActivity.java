@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, new FragmentBackground())
+                .commit();
     }
 
     @Override
