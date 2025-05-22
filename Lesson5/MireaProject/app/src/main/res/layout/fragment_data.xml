@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="ГАЗ-13 «Ча́йка» — советский представительский легковой автомобиль большого и представительского класса"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="365dp"
+            android:contentDescription="ГАЗ-13"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cabrio" />
+
+        <TextView
+            android:text="Кабриолет, который представляет собой модифицированную «Чайку» стандартного образца. Кабриолет был выпущен ограниченной серией и являлся автомобилем представительского класса. Несколько моделей были отправлены в Крым и на Кавказ, а остальные использовались государственными руководителями."
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/textColorSecondary"
+            android:paddingTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
