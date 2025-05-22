@@ -48,4 +48,14 @@
         android:name="com.mirea.turbinava.mireaproject.VoiceNoteFragment"
         android:label="fragment_voice_note"
         tools:layout="@layout/fragment_voice_note" />
+    <fragment
+        android:id="@+id/nav_file"
+        android:name="com.mirea.turbinava.mireaproject.FileFragment"
+        android:label="fragment_file"
+        tools:layout="@layout/fragment_file" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.mirea.turbinava.mireaproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
