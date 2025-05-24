@@ -58,4 +58,9 @@
         android:name="com.mirea.turbinava.mireaproject.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_network"
+        android:name="com.mirea.turbinava.mireaproject.NetworkFragment"
+        android:label="fragment_network"
+        tools:layout="@layout/fragment_network" />
 </navigation>

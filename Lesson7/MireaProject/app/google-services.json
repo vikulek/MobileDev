@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "387866958906",
+    "project_id": "firebaseauth-b0b80739",
+    "storage_bucket": "firebaseauth-b0b80739.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387866958906:android:20b59ac67b000fdf8c2903",
+        "android_client_info": {
+          "package_name": "com.mirea.turbinava.firebaseauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuc_HInMxVhhiCs6ueRaSrhSr5Zp0uxSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387866958906:android:851afccc439f8fae8c2903",
+        "android_client_info": {
+          "package_name": "com.mirea.turbinava.mireaproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuc_HInMxVhhiCs6ueRaSrhSr5Zp0uxSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
