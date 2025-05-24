@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mirea.turbinava.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.mirea.turbinava.mireaproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.mirea.turbinava.mireaproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_data"
+        android:name="com.mirea.turbinava.mireaproject.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/nav_web"
+        android:name="com.mirea.turbinava.mireaproject.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="com.mirea.turbinava.mireaproject.CompassFragment"
+        android:label="fragment_compass"
+        tools:layout="@layout/fragment_compass" />
+    <fragment
+        android:id="@+id/nav_photo_note"
+        android:name="com.mirea.turbinava.mireaproject.PhotoNoteFragment"
+        android:label="fragment_photo_note"
+        tools:layout="@layout/fragment_photo_note" />
+    <fragment
+        android:id="@+id/nav_voice_note"
+        android:name="com.mirea.turbinava.mireaproject.VoiceNoteFragment"
+        android:label="fragment_voice_note"
+        tools:layout="@layout/fragment_voice_note" />
+    <fragment
+        android:id="@+id/nav_file"
+        android:name="com.mirea.turbinava.mireaproject.FileFragment"
+        android:label="fragment_file"
+        tools:layout="@layout/fragment_file" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.mirea.turbinava.mireaproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
