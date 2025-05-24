@@ -27,3 +27,5 @@
 ![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson7/screens/304.png)
 ![Image alt](https://github.com/vikulek/MobileDev/blob/master/Lesson7/screens/305.png)
 
+Дмитрий Андреевич, я пыталась, но оно не грузит, в итоге я в печали
+
